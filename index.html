@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larissa's project</title>
+  <link rel="stylesheet" href="src/styles.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/ce2988a1e0.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body style="background-color: #eef4ff;">
+  <!-- <form id="city-form">
+  <input type="text" placeholder="Seach for location" class="location" id="search-button" />
+  <button type="button" class="search" id="submit-button">Blaaa</button>
+  </form> -->
+
+  <div class="container-md">
+      <div class="row">
+        <div class="col-10 buscar">
+          <form id="city-form">
+            <input type="text" placeholder="Seach for location" class="location" id="search-button" />
+            <button type="submit" class="search" id="submit-button">Search</button>
+          <button class="current" id="current-button">Current city</button>
+          </form>
+          
+        </div>
+      </div>
+    
+
+    <div class="paris">
+      <div class="row info1">
+        <div class="col-3">
+          <strong>Feels like</strong> <br />
+          <span class="wind" id="windItem"></span>
+        </div>
+        <div class="col-3">
+          <strong>Forecast</strong> <br />
+          <span class="humidity" id="forecastItem"></span>
+        </div>
+        <div class="col-3">
+          <strong>Sunrise</strong> <br />
+          <span id="sunriseItem"></span>
+        </div>
+        <div class="col-3">
+          <strong>Sunset</strong> <br />
+          <span id="sunsetItem"></span>
+        </div>
+      </div>
+
+      <span class="header">
+        <i class="fas fa-sun iconparis"></i>
+        <p id="temperature">22<span class="circulito">°C</span></p>
+      </span>
+      <span class="sub" id="cityLabel">
+        <p>Paris</p>
+      </span>
+
+      <div class="row info2">
+        <div class="col-10 fecha" id="actual-date">
+          Wed 12:05
+        </div>
+        <div class="col-1 cels grados">
+          °C
+        </div>
+        <div class="col-1 faren grados">
+          °F
+        </div>
+      </div>
+    </div>
+
+    <div class="row days">
+      <div class="col-2 thu">
+        <i class="fas fa-cloud-sun iconthu"></i> <br />
+        <strong>Thu</strong> <br />
+        25° <span class="night">12°</span>
+      </div>
+      <div class="col-2 fri">
+        <i class="fas fa-cloud-sun iconthu"></i> <br />
+        <strong>Fri</strong>
+        <br />
+        25° <span class="night">12°</span>
+      </div>
+      <div class="col-2 sat">
+        <i class="fas fa-cloud-showers-heavy iconthu"></i><br />
+        <strong>Sat</strong> <br />
+        26° <span class="night">12°</span>
+      </div>
+      <div class="col-2 sun">
+        <i class="fas fa-cloud-sun iconthu"></i></i><br />
+        <strong>Sun</strong> <br />
+        25° <span class="night">13°</span>
+      </div>
+    </div>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+
+</html>

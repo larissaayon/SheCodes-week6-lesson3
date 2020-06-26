@@ -1,0 +1,193 @@
+/* CIUDADES Y SEARCH BARC */
+body {
+  background-color: #black;
+}
+
+.container-md {
+  margin-top: 50px;
+  /* width: 650px; */
+}
+
+.location {
+  width: 427px;
+  line-height: 2.65;
+  padding-left: 15px;
+  border-radius: 0px 0 0 0px;
+  background-color: #b9d2fa;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  margin-bottom: 8px;
+  border: #b1cbf5 0.5px solid;
+}
+
+.search {
+  background-color: #a2c3f7;
+  width: 85px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  color: rgba(255, 255, 255);
+  line-height: 2;
+  padding: 6px;
+  border-radius: 0 0px 0px 0;
+  border: #9abcf3 0.5px solid;
+}
+
+.current {
+  background-color: #81aef8;
+
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  width: 120px;
+  color: rgba(255, 255, 255);
+  line-height: 2;
+  padding: 6px;
+  border-radius: 0 0px 0px 0;
+  border: #7aa8f1 0.5px solid;
+}
+
+.buscar {
+  margin-bottom: 3px;
+}
+
+.info1 {
+  margin-bottom: 250px;
+  color: #ffffff;
+}
+
+/* PARIS */
+
+.iconparis {
+  position: absolute;
+  font-size: 100px;
+  bottom: 300px;
+  opacity: 20%;
+}
+
+.header {
+  font-size: 160px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 0.5;
+}
+
+.circulito {
+  font-size: 100px;
+  vertical-align: 80%;
+}
+
+.sub {
+  font-size: 75px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.paris {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  margin-left: 0;
+  background-color: #073d70;
+  background-image: linear-gradient(120deg, #b0caf5 0%, #93b9f7 100%);
+  max-width: 640px;
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+}
+
+.col {
+  font-size: 14px;
+}
+
+.grados:hover {
+  font-weight: 700;
+}
+
+.fecha {
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.cels {
+  text-align: center;
+  margin-left: -10px;
+  font-weight: 200;
+  color: #ffffff;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.faren {
+  text-align: left;
+  right: 20px;
+  font-weight: 200;
+  color: #ffffff;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.col-2 {
+  text-align: left;
+}
+
+.form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* DIAS PARIS */
+
+.days {
+  max-width: 960px;
+}
+
+.thu {
+  background-color: #b9d2fa;
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  margin-left: 15px;
+  border-radius: 0 0 0 0px;
+}
+
+.iconthu {
+  font-size: 30px;
+  opacity: 30%;
+}
+
+.fri {
+  background-color: #a2c3f7;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  padding-top: 70px;
+}
+
+.sat {
+  background-color: #95bbf7;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  padding-top: 70px;
+}
+
+.sun {
+  background-color: #81aef8;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  padding-top: 70px;
+  border-radius: 0 0 0px 0;
+}
+
+.night {
+  color: #ffffff81;
+}
+
+.col-2 {
+  width: 20px;
+}
