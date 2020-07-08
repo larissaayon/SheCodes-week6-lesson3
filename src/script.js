@@ -120,14 +120,8 @@ function showTemperature(response) {
 
 // CURRENT POSITION
 
-function showPosition(response) {
-  let keyGoogle = "AIzaSyDJjF0WCjyUVaNqBhbzURFwfMJskmmxm_Q";
-  var lat = position.coords.latitude;
-  var lng = position.coords.longitude;
-  let latLng = `${lat} ${lng}`;
-  let urlGoogle = `https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=${keyGoogle}`;
+function showPosition(position) {
   let city = document.querySelector("#cityLabel");
-
   city.innerHTML = `${position.coords.latitude}, ${position.coords.longitude}`;
 }
 
