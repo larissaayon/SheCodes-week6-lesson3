@@ -82,11 +82,11 @@ function showTemperature(response) {
   if (response.data.cod == 200) {
     let temperature = Math.round(response.data.main.temp);
     let tempElement = document.querySelector("#temperature");
-    tempElement.innerHTML = `${temperature}ºC`;
+    tempElement.innerHTML = `${temperature}°C`;
 
     let feels = document.querySelector("#windItem");
     let feelsLike = Math.round(response.data.main.feels_like);
-    feels.innerHTML = `${feelsLike} ºC`;
+    feels.innerHTML = `${feelsLike} °C`;
 
     let forecast = document.querySelector("#forecastItem");
     let theForecast = response.data.weather[0].main;
@@ -119,6 +119,24 @@ function showTemperature(response) {
 }
 
 // CURRENT POSITION
+
+// function showPosition(response) {
+//   let keyGoogle = "AIzaSyDJjF0WCjyUVaNqBhbzURFwfMJskmmxm_Q";
+//   var lat = position.coords.latitude;
+//   var lng = position.coords.longitude;
+//   let latLng = `${lat} ${lng}`;
+//   let urlGoogle = `https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=${keyGoogle}`;
+//   let city = document.querySelector("#cityLabel");
+
+//   city.innerHTML = `${position.coords.latitude}, ${position.coords.longitude}`;
+// }
+
+// function getCurrentPosition() {
+//   navigator.geolocation.getCurrentPosition(showPosition);
+// }
+
+// let button = document.querySelector("#current-button");
+// button.addEventListener("click", getCurrentPosition);
 
 function showPosition(position) {
   let city = document.querySelector("#cityLabel");
