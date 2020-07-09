@@ -135,7 +135,8 @@ function showTemperature(response) {
 function showFarenheitTemperature(event) {
   event.preventDefault();
   let farenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  // alert(Math.round(farenheitTemperature));
+  celsiusLink.classList.remove("active");
+  farenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = `${Math.round(farenheitTemperature)}°F`;
 }
@@ -147,6 +148,8 @@ farenheitLink.addEventListener("click", showFarenheitTemperature);
 
 function showCelsiusTemperature(event) {
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  farenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = `${Math.round(celsiusTemperature)}°C`;
 }

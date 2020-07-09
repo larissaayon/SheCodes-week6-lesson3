@@ -99,6 +99,7 @@
 }
 .grados:hover {
   font-weight: 700;
+  text-decoration: none;
 }
 
 .fecha {
@@ -109,7 +110,7 @@
 .cels {
   text-align: right;
   font-weight: 200;
-  color: #ffffff;
+  color: #4f78bb;
   right: 110px;
   transition: all 100ms ease-in-out;
   cursor: pointer;
@@ -120,7 +121,7 @@
   margin-left: 10px;
   right: 85px;
   font-weight: 200;
-  color: #ffffff;
+  color: #4f78bb;
   transition: all 100ms ease-in-out;
   cursor: pointer;
 }
@@ -132,6 +133,16 @@
 .form {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.active {
+  color: white;
+  cursor: default;
+  font-weight: 700;
+}
+
+.active:hover {
+  text-decoration: none;
 }
 
 /* ACTUAL CITY 4 DAY FORECAST */
