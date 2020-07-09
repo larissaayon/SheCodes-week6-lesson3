@@ -2,11 +2,11 @@
 
 .container-md {
   margin: 15px auto;
-  max-width: 550px;
+  max-width: 630px;
 }
 
 .location {
-  width: 331px;
+  width: 411px;
   line-height: 2.65;
   padding-left: 15px;
   border-radius: 0px 0 0 0px;
@@ -72,7 +72,7 @@
 }
 
 .sub {
-  font-size: 75px;
+  font-size: 60px;
   font-family: "Manrope", sans-serif;
   font-weight: 300;
   text-transform: capitalize;
@@ -111,7 +111,7 @@
   text-align: right;
   font-weight: 200;
   color: #4f78bb;
-  right: 110px;
+  right: 130px;
   transition: all 100ms ease-in-out;
   cursor: pointer;
 }
@@ -119,7 +119,7 @@
 .faren {
   text-align: right;
   margin-left: 10px;
-  right: 85px;
+  right: 105px;
   font-weight: 200;
   color: #4f78bb;
   transition: all 100ms ease-in-out;
