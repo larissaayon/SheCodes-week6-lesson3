@@ -21,6 +21,11 @@ let minutes = now.getMinutes();
     minutes = `0${minutes}`;
   }
 }
+{
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+}
 
 let h3 = document.querySelector("#actual-date");
 
