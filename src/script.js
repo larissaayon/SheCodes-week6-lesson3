@@ -87,6 +87,7 @@ function showTemperature(response) {
   if (response.data.cod == 200) {
     let temperature = Math.round(response.data.main.temp);
     let tempElement = document.querySelector("#temperature");
+    celsiusTemperature = response.data.main.temp;
     tempElement.innerHTML = `${temperature}°C`;
 
     let feels = document.querySelector("#windItem");
@@ -128,6 +129,30 @@ function showTemperature(response) {
     alert(response.data.message);
   }
 }
+
+// CONVERT WEATHER FROM CELSIUS TO FARENHEIT
+
+function showFarenheitTemperature(event) {
+  event.preventDefault();
+  let farenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  // alert(Math.round(farenheitTemperature));
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = `${Math.round(farenheitTemperature)}°F`;
+}
+
+let celsiusTemperature = null;
+
+let farenheitLink = document.querySelector("#farenheit");
+farenheitLink.addEventListener("click", showFarenheitTemperature);
+
+function showCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = `${Math.round(celsiusTemperature)}°C`;
+}
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 // CURRENT POSITION
 

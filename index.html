@@ -24,7 +24,7 @@
       <div class="col-12 buscar">
         <form id="city-form">
           <input type="text" placeholder="Seach for location" class="location" id="search-button" />
-          <button type="submit" class="search" id="submit-button">Search</button>
+          <button type="submit" class="search" autocomplete="off" id="submit-button">Search</button>
           <button class="current" id="current-button">Current city</button>
         </form>
 
@@ -71,12 +71,16 @@
         <div class="col-8 fecha">
           Last updated: <span id="actual-date">Wed 12:05</span>
         </div>
-        <div class="col-2 cels grados">
+        <div class="col-4"> 
+          <span class="cels grados" id="celsius">°C </span> 
+          <a href="#" class="faren grados" id="farenheit"> °F </a>
+        </div>
+        <!-- <div class="col-2 cels grados" id="celsius">
           °C
         </div>
-        <div class="col-2 faren grados">
-          °F
-        </div>
+        <div class="col-2 faren grados" id="farenheit">
+          °C
+        </div> -->
       </div>
     </div>
     </div>

@@ -95,7 +95,7 @@
 }
 
 .grados {
-  position: relative;
+  position: absolute;
 }
 .grados:hover {
   font-weight: 700;
@@ -110,13 +110,15 @@
   text-align: right;
   font-weight: 200;
   color: #ffffff;
+  right: 110px;
   transition: all 100ms ease-in-out;
   cursor: pointer;
 }
 
 .faren {
-  text-align: left;
-  right: 20px;
+  text-align: right;
+  margin-left: 10px;
+  right: 85px;
   font-weight: 200;
   color: #ffffff;
   transition: all 100ms ease-in-out;
