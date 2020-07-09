@@ -97,6 +97,12 @@ function showTemperature(response) {
     let theForecast = response.data.weather[0].main;
     forecast.innerHTML = `${theForecast}`;
 
+    let iconElement = document.querySelector("#icon");
+    iconElement.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+
     let sunrise = document.querySelector("#sunriseItem");
     let theSunrise = new Date(response.data.sys.sunrise * 1000);
     let sunriseHour = theSunrise.getHours();

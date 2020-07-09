@@ -53,9 +53,9 @@
 
 .iconparis {
   position: absolute;
-  font-size: 100px;
+  width: 80px;
   bottom: 300px;
-  opacity: 20%;
+  opacity: 100%;
 }
 
 .header {
