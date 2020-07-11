@@ -6,9 +6,10 @@
 }
 
 .location {
-  width: 411px;
+  /* width: 411px; */
   line-height: 2.65;
   padding-left: 15px;
+  padding-right: 225px;
   border-radius: 0px 0 0 0px;
   background-color: #b9d2fa;
   color: white;
