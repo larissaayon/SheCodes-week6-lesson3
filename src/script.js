@@ -31,13 +31,105 @@ let h3 = document.querySelector("#actual-date");
 
 h3.innerHTML = `${day} ${hour}:${minutes}`;
 
+// FORECAST
+
+function formatHours(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
+}
+
+function displayForecast(response) {
+  console.log(response);
+  let forecastElement = document.querySelector("#forecast");
+  let forecast = response.data.list[0];
+  console.log(forecast);
+  forecastElement.innerHTML = `
+  <div class="col-3 thu">
+    <img
+        src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+        class= "iconthu"
+        />
+        <br/>
+        <strong>${formatHours(forecast.dt * 1000)}</strong> <br />
+        ${Math.round(
+          forecast.main.temp_max
+        )}° |<span class="night"> ${Math.round(forecast.main.temp_min)}°
+        </span>
+  </div>`;
+
+  forecast = response.data.list[1];
+  forecastElement.innerHTML = forecastElement.innerHTML += `
+  <div class="col-3 fri second">
+    <img
+        src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+        class= "iconthu"
+        />
+        <br/>
+        <strong>${formatHours(forecast.dt * 1000)}</strong> <br />
+        ${Math.round(
+          forecast.main.temp_max
+        )}° |<span class="night"> ${Math.round(forecast.main.temp_min)}°
+        </span>
+  </div>`;
+
+  forecast = response.data.list[2];
+  forecastElement.innerHTML = forecastElement.innerHTML += `
+  <div class="col-3 sat second">
+    <img
+        src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+        class= "iconthu"
+        />
+        <br/>
+        <strong>${formatHours(forecast.dt * 1000)}</strong> <br />
+        ${Math.round(
+          forecast.main.temp_max
+        )}° |<span class="night"> ${Math.round(forecast.main.temp_min)}°
+        </span>
+  </div>`;
+
+  forecast = response.data.list[3];
+  forecastElement.innerHTML = forecastElement.innerHTML += `
+  <div class="col-3 sun second">
+    <img
+        src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+        class= "iconthu"
+        />
+        <br/>
+        <strong>${formatHours(forecast.dt * 1000)}</strong> <br />
+        ${Math.round(
+          forecast.main.temp_max
+        )}° |<span class="night"> ${Math.round(forecast.main.temp_min)}°
+        </span>
+  </div>`;
+}
+
 // SEARCH FOR LOCATION
 
-var city = "London";
+https: var city = "London";
 
 let apiKey = "cf6bce2bff74fdd5748a172d2966f4f1";
 var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(showTemperature);
+
+apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+axios.get(apiUrl).then(displayForecast);
 
 function changeCity(event) {
   event.preventDefault();
@@ -52,14 +144,22 @@ function changeCity(event) {
     firstLetter = firstLetter.toUpperCase();
     input = firstLetter + input;
     cityLabel.innerHTML = input;
-    console.log("Call");
-    console.log(city);
+    // console.log("Call");
+    // console.log(city);
     apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${apiKey}&units=metric`;
     axios
       .get(apiUrl)
       .then(showTemperature)
       .catch((error) => {
         cityLabel.innerHTML = "Not found";
+        alert("The city you entered does not exist.");
+      });
+
+    apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${input}&appid=${apiKey}&units=metric`;
+    axios
+      .get(apiUrl)
+      .then(displayForecast)
+      .catch((error) => {
         alert("The city you entered does not exist.");
       });
   } else {
@@ -139,6 +239,8 @@ function showFarenheitTemperature(event) {
   farenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = `${Math.round(farenheitTemperature)}°F`;
+  let secondTemperatureElement = document.querySelector("#night");
+  secondTemperatureElement.innerHTML = `${Math.round(farenheitTemperature)}°F`;
 }
 
 let celsiusTemperature = null;

@@ -12,7 +12,7 @@
   padding-right: 225px;
   border-radius: 0px 0 0 0px;
   background-color: #b9d2fa;
-  color: white;
+  color: #f5f8ff;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   margin-bottom: 1px;
@@ -24,7 +24,7 @@
   width: 70px;
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  color: rgba(255, 255, 255);
+  color: #f5f8ff;
   line-height: 2;
   padding: 6px;
   border: #9abcf3 0.5px solid;
@@ -35,7 +35,7 @@
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   width: 110px;
-  color: rgba(255, 255, 255);
+  color: #f5f8ff;
   line-height: 2;
   padding: 6px;
   border: #7aa8f1 0.5px solid;
@@ -47,37 +47,38 @@
 
 .info1 {
   margin-bottom: 250px;
-  color: #ffffff;
+  color: #f5f8ff;
 }
 
 /* ACTUAL CITY WEATHER */
 
 .iconparis {
   position: absolute;
-  width: 110px;
-  bottom: 300px;
+  width: 120px;
+  bottom: 240px;
   opacity: 100%;
+  left: 0px;
 }
 
 .header {
-  font-size: 160px;
+  font-size: 140px;
   font-family: "Manrope", sans-serif;
-  font-weight: 300;
-  color: #ffffff;
-  line-height: 0.5;
+  font-weight: 700;
+  color: #f5f8ff;
+  line-height: 0.4;
 }
 
-.circulito {
+/* .circulito {
   font-size: 100px;
   vertical-align: 80%;
-}
+} */
 
 .sub {
   font-size: 60px;
   font-family: "Manrope", sans-serif;
   font-weight: 300;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #f5f8ff;
 }
 
 .paris {
@@ -104,7 +105,7 @@
 }
 
 .fecha {
-  color: #ffffff;
+  color: #f5f8ff;
   font-weight: 200;
 }
 
@@ -137,7 +138,7 @@
 }
 
 .active {
-  color: white;
+  color: #f5f8ff;
   cursor: default;
   font-weight: 700;
 }
@@ -154,7 +155,7 @@
 
 .thu {
   background-color: #b9d2fa;
-  color: #ffffff;
+  color: #f5f8ff;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   padding-top: 70px;
@@ -162,15 +163,17 @@
 }
 
 .iconthu {
-  font-size: 30px;
-  opacity: 30%;
+  width: 70px;
+  position: relative;
+  right: 13px;
+  opacity: 50%;
 }
 
 .fri {
   background-color: #a2c3f7;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: #f5f8ff;
   padding-top: 70px;
 }
 
@@ -178,7 +181,7 @@
   background-color: #95bbf7;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: #f5f8ff;
   padding-top: 70px;
 }
 
@@ -186,7 +189,7 @@
   background-color: #81aef8;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: #f5f8ff;
   padding-top: 70px;
 }
 
