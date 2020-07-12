@@ -122,7 +122,7 @@ function displayForecast(response) {
 
 // SEARCH FOR LOCATION
 
-https: var city = "London";
+var city = "Paris";
 
 let apiKey = "cf6bce2bff74fdd5748a172d2966f4f1";
 var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
