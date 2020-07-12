@@ -9,27 +9,27 @@
 #city-form {
   display: flex;
 }
-
+/* #2f42f0 0%, #0011aa */
 .location {
   line-height: 2.65;
   padding-left: 15px;
   padding-right: 15px;
   flex: 1;
-  background-color: #bfd4f7;
-  color: #f5f8ff;
+  background-color: #2f42f0;
+  color: #e0e3ff;
   font-weight: 400;
   margin-bottom: 0px;
-  border: #b1cbf5 0.5px solid;
+  border: #2f42f0 0.5px solid;
 }
 
 .search {
-  background-color: #93b9f7;
+  background-color: #0011aa;
   width: 70px;
   font-weight: 700;
-  color: #f5f8ff;
+  color: #e0e3ff;
   line-height: 2;
   padding: 5px;
-  border: #9abcf3 0.5px solid;
+  border: #0011aa 0.5px solid;
 }
 
 /* .current {
@@ -54,7 +54,7 @@
 
 .info1 {
   margin-bottom: 250px;
-  color: #f5f8ff;
+  color: #e0e3ff;
 }
 
 /* ACTUAL CITY WEATHER */
@@ -70,7 +70,7 @@
 .header {
   font-size: 130px;
   font-weight: 700;
-  color: #f5f8ff;
+  color: #e0e3ff;
   line-height: 0.4;
 }
 /* .circulito {
@@ -82,7 +82,7 @@
   font-size: 50px;
   font-weight: 300;
   text-transform: capitalize;
-  color: #f5f8ff;
+  color: #e0e3ff;
 }
 
 .paris {
@@ -90,7 +90,8 @@
   padding-left: 15px;
   padding-bottom: 15px;
   background-color: #073d70;
-  background-image: linear-gradient(120deg, #bfd4f7 0%, #93b9f7 100%);
+  /* background-image: linear-gradient(120deg, #bfd4f7 0%, #93b9f7 100%); */
+  background-image: linear-gradient(120deg, #2f42f0 0%, #0011aa 100%);
   /* position: relative; */
   font-weight: 400;
 }
@@ -108,14 +109,14 @@
 }
 
 .fecha {
-  color: #f5f8ff;
+  color: #e0e3ff;
   font-weight: 200;
 }
 
 .cels {
   text-align: right;
   font-weight: 200;
-  color: #4f78bb;
+  color: #2f42f0;
   right: 120px;
   transition: all 100ms ease-in-out;
   cursor: pointer;
@@ -126,7 +127,7 @@
   margin-left: 10px;
   right: 95px;
   font-weight: 200;
-  color: #4f78bb;
+  color: #2f42f0;
   transition: all 100ms ease-in-out;
   cursor: pointer;
 }
@@ -141,7 +142,7 @@
 }
 
 .active {
-  color: #f5f8ff;
+  color: #e0e3ff;
   cursor: default;
   font-weight: 700;
 }
@@ -157,8 +158,8 @@
 }
 
 .thu {
-  background-color: #b9d2fa;
-  color: #f5f8ff;
+  background-color: #2f42f0;
+  color: #e0e3ff;
   font-weight: 400;
   padding-top: 40px;
   padding-bottom: 10px;
@@ -168,27 +169,27 @@
   width: 70px;
   position: relative;
   right: 13px;
-  opacity: 50%;
+  opacity: 100%;
 }
 
 .fri {
-  background-color: #a2c3f7;
+  background-color: #1d30dd;
   font-weight: 400;
-  color: #f5f8ff;
+  color: #e0e3ff;
   padding-top: 40px;
 }
 
 .sat {
-  background-color: #95bbf7;
+  background-color: #0d1fc4;
   font-weight: 400;
-  color: #f5f8ff;
+  color: #e0e3ff;
   padding-top: 40px;
 }
 
 .sun {
-  background-color: #81aef8;
+  background-color: #0011aa;
   font-weight: 400;
-  color: #f5f8ff;
+  color: #e0e3ff;
   padding-top: 40px;
 }
 
@@ -201,15 +202,15 @@
   padding-bottom: 20px;
   text-align: center;
   font-size: 12px;
-  color: #4f78bb;
+  color: #1d30dd;
 }
 
 .endlala {
-  color: #4f78bb;
+  color: #1d30dd;
 }
 
 .endlala:hover {
   font-weight: 700;
   font-decoration: none;
-  color: #95bbf7;
+  color: #5061fd;
 }
