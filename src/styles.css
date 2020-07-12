@@ -113,7 +113,7 @@
   text-align: right;
   font-weight: 200;
   color: #4f78bb;
-  right: 130px;
+  right: 120px;
   transition: all 100ms ease-in-out;
   cursor: pointer;
 }
@@ -121,7 +121,7 @@
 .faren {
   text-align: right;
   margin-left: 10px;
-  right: 105px;
+  right: 95px;
   font-weight: 200;
   color: #4f78bb;
   transition: all 100ms ease-in-out;
