@@ -205,26 +205,26 @@ function showTemperature(response) {
     );
 
     let sunrise = document.querySelector("#sunriseItem");
-    let theSunrise = new Date(response.data.sys.sunrise * 1000);
-    let sunriseHour = theSunrise.getHours();
-    let sunriseMinute = theSunrise.getMinutes();
+    let theSunrise = Math.round(response.data.wind.speed);
+    // let sunriseHour = theSunrise.getHours();
+    // let sunriseMinute = theSunrise.getMinutes();
 
-    if (sunriseMinute < 10) {
-      sunriseMinute = `0${sunriseMinute}`;
-    }
+    // if (sunriseMinute < 10) {
+    //   sunriseMinute = `0${sunriseMinute}`;
+    // }
 
-    sunrise.innerHTML = `${sunriseHour}:${sunriseMinute}`;
+    sunrise.innerHTML = `${theSunrise} km/h`;
 
     let sunset = document.querySelector("#sunsetItem");
-    let theSunset = new Date(response.data.sys.sunset * 1000);
-    let sunsetHour = theSunset.getHours();
-    let sunsetMinute = theSunset.getMinutes();
+    let theSunset = Math.round(response.data.main.humidity);
+    // let sunsetHour = theSunset.getHours();
+    // let sunsetMinute = theSunset.getMinutes();
 
-    if (sunsetMinute < 10) {
-      sunsetMinute = `0${sunsetMinute}`;
-    }
+    // if (sunsetMinute < 10) {
+    //   sunsetMinute = `0${sunsetMinute}`;
+    // }
 
-    sunset.innerHTML = `${sunsetHour}:${sunsetMinute}`;
+    sunset.innerHTML = `${theSunset}%`;
   } else if (response.data.cod == 404) {
     alert(response.data.message);
   }

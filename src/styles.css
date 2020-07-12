@@ -43,6 +43,11 @@
   border: #7aa8f1 0.5px solid;
 } */
 
+.four {
+  position: absolute;
+  right: 7px;
+}
+
 .buscar {
   margin-bottom: 3px;
 }
@@ -193,7 +198,18 @@
 
 .end {
   padding-top: 40px;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 12px;
   color: #4f78bb;
+}
+
+.endlala {
+  color: #4f78bb;
+}
+
+.endlala:hover {
+  font-weight: 700;
+  font-decoration: none;
+  color: #95bbf7;
 }
