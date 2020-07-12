@@ -239,8 +239,8 @@ function showFarenheitTemperature(event) {
   farenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = `${Math.round(farenheitTemperature)}°F`;
-  let secondTemperatureElement = document.querySelector("#night");
-  secondTemperatureElement.innerHTML = `${Math.round(farenheitTemperature)}°F`;
+  // let secondTemperatureElement = document.querySelector("#night");
+  // secondTemperatureElement.innerHTML = `${Math.round(farenheitTemperature)}°F`;
 }
 
 let celsiusTemperature = null;
@@ -279,14 +279,14 @@ celsiusLink.addEventListener("click", showCelsiusTemperature);
 // let button = document.querySelector("#current-button");
 // button.addEventListener("click", getCurrentPosition);
 
-function showPosition(position) {
-  let city = document.querySelector("#cityLabel");
-  city.innerHTML = `${position.coords.latitude}, ${position.coords.longitude}`;
-}
+// function showPosition(position) {
+//   let city = document.querySelector("#cityLabel");
+//   city.innerHTML = `${position.coords.latitude}, ${position.coords.longitude}`;
+// }
 
-function getCurrentPosition() {
-  navigator.geolocation.getCurrentPosition(showPosition);
-}
+// function getCurrentPosition() {
+//   navigator.geolocation.getCurrentPosition(showPosition);
+// }
 
-let button = document.querySelector("#current-button");
-button.addEventListener("click", getCurrentPosition);
+// let button = document.querySelector("#current-button");
+// button.addEventListener("click", getCurrentPosition);
