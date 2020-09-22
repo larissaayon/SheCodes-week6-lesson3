@@ -56,18 +56,17 @@
 }
 
 .info1 {
-  margin-bottom: 250px;
+  margin-bottom: 160px;
   color: #e0e3ff;
 }
 
 /* ACTUAL CITY WEATHER */
 
 .iconparis {
-  position: absolute;
+  position: relative;
   width: 120px;
-  bottom: 240px;
+  bottom: 100px;
   opacity: 100%;
-
   bottom: 10px;
 }
 
@@ -157,7 +156,7 @@
   text-decoration: none;
 }
 
-/* ACTUAL CITY 4 DAY FORECAST */
+/* CITY 4 DAY FORECAST */
 
 .days {
   margin: 0 auto;
@@ -183,7 +182,6 @@
   background-color: #b5bcfc;
   font-weight: 400;
   color: #e0e3ff;
-  /* */
   padding-top: 40px;
 }
 
