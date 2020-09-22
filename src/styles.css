@@ -15,19 +15,21 @@
   padding-left: 15px;
   padding-right: 15px;
   flex: 1;
-  background-color: #4859f3;
-  background-image: linear-gradient(120deg, #1251df 0%, #053092 100%);
-  color: #e0e3ff;
+  background-color: #c1c7fc;
+  /* background-image: linear-gradient(120deg, #1251df 0%, #053092 100%); */
+  /* color: #e0e3ff; */
+  color: #eff0ff;
   font-weight: 400;
   margin-bottom: 0px;
   border: none;
 }
 
 .search {
-  background-color: #042571;
+  background-color: #9da6fa;
   width: 70px;
   font-weight: 700;
-  color: #e0e3ff;
+  /* color: #e0e3ff; */
+  color: #eff0ff;
   line-height: 2;
   padding: 5px;
   border: none;
@@ -65,7 +67,8 @@
   width: 120px;
   bottom: 240px;
   opacity: 100%;
-  left: 15px;
+
+  bottom: 10px;
 }
 
 .header {
@@ -73,6 +76,9 @@
   font-weight: 700;
   color: #e0e3ff;
   line-height: 0.4;
+  position: relative;
+  right: 5px;
+  bottom: 10px;
 }
 /* .circulito {
   font-size: 100px;
@@ -90,9 +96,8 @@
   padding-top: 15px;
   padding-left: 15px;
   padding-bottom: 15px;
-  background-color: #073d70;
+  background-color: #c1c7fc;
   /* background-image: linear-gradient(120deg, #bfd4f7 0%, #93b9f7 100%); */
-  background-image: linear-gradient(120deg, #1251df 0%, #042571 100%);
   /* position: relative; */
   font-weight: 400;
 }
@@ -117,7 +122,7 @@
 .cels {
   text-align: right;
   font-weight: 200;
-  color: #1251df;
+  color: #9da6fa;
   right: 120px;
   transition: all 100ms ease-in-out;
   cursor: pointer;
@@ -128,7 +133,7 @@
   margin-left: 10px;
   right: 95px;
   font-weight: 200;
-  color: #1251df;
+  color: #9da6fa;
   transition: all 100ms ease-in-out;
   cursor: pointer;
 }
@@ -156,10 +161,11 @@
 
 .days {
   margin: 0 auto;
+  margin-top: 3px;
 }
 
 .thu {
-  background-color: #1251df;
+  background-color: #c1c7fc;
   color: #e0e3ff;
   font-weight: 400;
   padding-top: 40px;
@@ -174,28 +180,29 @@
 }
 
 .fri {
-  background-color: #073ebd;
+  background-color: #b5bcfc;
   font-weight: 400;
   color: #e0e3ff;
+  /* */
   padding-top: 40px;
 }
 
 .sat {
-  background-color: #053092;
+  background-color: #aab2f8;
   font-weight: 400;
   color: #e0e3ff;
   padding-top: 40px;
 }
 
 .sun {
-  background-color: #042571;
+  background-color: #9da6fa;
   font-weight: 400;
   color: #e0e3ff;
   padding-top: 40px;
 }
 
 .night {
-  color: #ffffff81;
+  color: #cbd0fc;
 }
 
 .end {
@@ -203,15 +210,15 @@
   padding-bottom: 20px;
   text-align: center;
   font-size: 12px;
-  color: #1d30dd;
+  color: #9da6fa;
 }
 
 .endlala {
-  color: #1d30dd;
+  color: #9da6fa;
 }
 
 .endlala:hover {
   font-weight: 700;
   font-decoration: none;
-  color: #5061fd;
+  color: #838ffa;
 }
